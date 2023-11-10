@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="plumbing" type="pub.py" name="AddInts_Server" output="screen"/>
+    <node pkg="plumbing" type="sub.py" name="AddInts_Client" args="2 3" output="screen">
+    </node>
+</launch>

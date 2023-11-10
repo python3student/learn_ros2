@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="tf2_test" type="pub_static.py" name="pub" />
+    <!-- <node pkg="tf2_test" type="sub_static.py" name="sub" /> -->
+</launch>

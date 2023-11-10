@@ -1,0 +1,16 @@
+{
+    "cmake.sourceDirectory": "/home/shrenqi/workspace/src/ros1",
+    "cmake.configureOnOpen": false,
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/shrenqi/workspace/devel/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/shrenqi/workspace/devel/lib/python3/dist-packages"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
+}

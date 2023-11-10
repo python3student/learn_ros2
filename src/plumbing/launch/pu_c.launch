@@ -1,0 +1,7 @@
+<launch>
+    <arg name="a" default="1"/>
+    <arg name="b" default="6"/>
+    <node pkg="plumbing" type="AddInts_Server" name="AddInts_Server" output="screen"/>
+    <node pkg="plumbing" type="AddInts_Client" name="AddInts_Client"  output="screen">
+    </node>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="publish" type="pub.py" name="talker_p" output="screen"/>
+    <node pkg="publish" type="sub.py" name="listener_p" output="screen" />
+</launch>

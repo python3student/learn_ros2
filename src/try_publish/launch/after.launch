@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="t1" ns="oth" >
+        <param name="background_r" value="133" ></param>
+        <!-- <param name="background_r" value="202" ></param>
+        <param name="background_g" value="158" ></param>
+        <param name="background_b" value="122" ></param> -->
+    </node>
+    <node pkg="try_publish" type="spawn_sim.py" name="spawn_sim" ns="oth" />
+    <node pkg="try_publish" type="cycle.py" name="cycle" ns="oth" />
+    <node pkg="try_publish" type="control_t2.py" name="control_sim" ns="oth" />
+    <!-- <node pkg="turtlesim" type="turtle_teleop_key" name="key1" /> -->
+</launch>

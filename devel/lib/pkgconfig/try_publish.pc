@@ -1,0 +1,8 @@
+prefix=/home/shrenqi/workspace/devel
+
+Name: try_publish
+Description: Description of try_publish
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

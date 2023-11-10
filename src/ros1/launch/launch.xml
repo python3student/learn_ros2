@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="ros1" type="ros1_node" name="hello" output="screen" />
+    <node pkg="ros1" type="turtlesim_node" name="t1"/>
+    <node pkg="ros1" type="turtle_teleop_key" name="key1" />
+</launch>

@@ -1,0 +1,16 @@
+<launch>
+    <!-- <node pkg="publish" type="pub.py" name="talker_p" output="screen" /> -->
+    <!-- <node pkg="publish" type="sub.py" name="listener_p" output="screen" /> -->
+    <node pkg="turtlesim" type="turtlesim_node" name="t1" />
+    <!-- <node pkg="turtlesim" type="turtlesim_node" name="t2" ns="xxx" /> -->
+    <!-- <node pkg="turtlesim" type="turtlesim_node" name="t2" /> -->
+    <node pkg="turtlesim" type="turtlesim_node" name="t3" >
+        <param name="background_r" value="133" ></param>
+    </node>
+    <node pkg="turtlesim" type="turtlesim_node" name="t4" ns="oth" >
+        <param name="background_r" value="133" ></param>
+    </node>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key1" ns="oth" />
+    <node pkg="try_publish" type="cycle.py" name="cycle" />
+    <node pkg="try_publish" type="set_rgb.py" name="set_t1_rgb" />
+</launch>

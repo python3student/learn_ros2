@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="publish" type="pub_c" name="pub_c" output="screen"/>
+    <node pkg="publish" type="sub_c" name="sub_c" output="screen" />
+</launch>

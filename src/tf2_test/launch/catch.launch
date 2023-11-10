@@ -1,0 +1,14 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="t1">
+        <param name="background_r" value="133"></param>
+    </node>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key" />
+    
+    <node pkg="tf2_test" type="spawn_sim.py" name="spawn_sim" output="screen"/>
+
+    <node pkg="tf2_test" type="transform_t1.py" name="broad_t1" args="turtle1"  output="screen"/>
+    <node pkg="tf2_test" type="transform_t1.py" name="broad_t2" args="t2"  output="screen"/>
+
+    <node pkg="tf2_test" type="t2_catch_t1.py" name="catch"  output="screen"/>
+    <!-- <node pkg="tf2_test" type="sub_static.py" name="sub" /> -->
+</launch>

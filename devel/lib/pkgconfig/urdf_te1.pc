@@ -1,0 +1,8 @@
+prefix=/home/shrenqi/workspace/devel
+
+Name: urdf_te1
+Description: Description of urdf_te1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
