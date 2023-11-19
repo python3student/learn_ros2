@@ -1,0 +1,8 @@
+prefix=/home/shrenqi/workspace/devel
+
+Name: urdf_test01
+Description: Description of urdf_test01
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
