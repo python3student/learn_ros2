@@ -4,6 +4,11 @@
     <!-- 启动 gazebo -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch" />
 
+    <!-- <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+        <rosparam file="$(find urdf_gazebo)/config/hello.yaml" command="load" />
+        <param name="sim" value="true" />
+   </node> -->
+   
     <!-- 在 gazebo 中显示机器人模型 -->
     <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  />
 </launch>
