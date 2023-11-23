@@ -17,5 +17,7 @@
    </node> -->
    
     <!-- 在 gazebo 中显示机器人模型 -->
+    <node pkg="urdf_gazebo" type="rand_move.py" name="car_rand"/>
+
     <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  />
 </launch>
