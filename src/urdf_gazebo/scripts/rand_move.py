@@ -10,10 +10,10 @@ def main() -> None:
     sim = rospy.Publisher(name="/car/cmd_vel", data_class=Twist, queue_size=10)
     message = Twist()
 
-    rate = rospy.Rate(5)
+    rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         message.linear.x, message.linear.y, message.linear.z = (
-            random.random(),
+            random.random() * 2 - 0.2,
             # random.random() * 30 - 15,
             0,
             0,
@@ -21,7 +21,7 @@ def main() -> None:
         message.angular.x, message.angular.y, message.angular.z = (
             0,
             0,
-            random.random(),
+            random.random() * 6 - 2,
         )
 
         sim.publish(message)

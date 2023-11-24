@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /Axes1
         - /Odometry1
         - /Odometry1/Covariance1
       Splitter Ratio: 0.5
@@ -240,7 +241,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.8788504600524902
+      Distance: 6.447753429412842
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -248,17 +249,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -1.3543977737426758
-        Y: 1.1799639463424683
-        Z: 1.6149826049804688
+        X: -0.04798518121242523
+        Y: -0.8167518377304077
+        Z: 0.7336542010307312
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.584796667098999
+      Pitch: 1.169796347618103
       Target Frame: <Fixed Frame>
-      Yaw: 3.9885661602020264
+      Yaw: 4.778568267822266
     Saved: ~
 Window Geometry:
   Displays:
