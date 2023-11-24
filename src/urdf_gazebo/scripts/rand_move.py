@@ -13,7 +13,7 @@ def main() -> None:
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         message.linear.x, message.linear.y, message.linear.z = (
-            random.random() * 2 - 0.2,
+            random.random() * 2 - 1,
             # random.random() * 30 - 15,
             0,
             0,
@@ -21,7 +21,7 @@ def main() -> None:
         message.angular.x, message.angular.y, message.angular.z = (
             0,
             0,
-            random.random() * 6 - 2,
+            random.random() * 6 - 3,
         )
 
         sim.publish(message)
