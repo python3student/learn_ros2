@@ -22,6 +22,8 @@
         <remap from="turtle1/cmd_vel" to="cmd_vel"></remap> 
     </node>
         
+    <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 -1.57 0 -1.57 /camera /support_depth" />
+
     <!-- 在 gazebo 中显示机器人模型 -->
     <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  />
 </launch>
