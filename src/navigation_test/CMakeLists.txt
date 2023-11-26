@@ -12,6 +12,12 @@ find_package(catkin REQUIRED COMPONENTS
   gmapping
   map_server
   move_base
+  xacro
+  gazebo_plugins
+  gazebo_ros
+  gazebo_ros_control
+  urdf
+  rospy
 )
 
 ## System dependencies are found with CMake's conventions
