@@ -132,12 +132,12 @@ Visualization Manager:
       Class: rviz/Map
       Color Scheme: map
       Draw Behind: false
-      Enabled: false
+      Enabled: true
       Name: Map
-      Topic: ""
+      Topic: /map
       Unreliable: false
       Use Timestamp: false
-      Value: false
+      Value: true
     - Alpha: 1
       Class: rviz/Axes
       Enabled: false
@@ -325,5 +325,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1402
-  X: 74
-  Y: 612
+  X: 93
+  Y: 601
