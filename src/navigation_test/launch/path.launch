@@ -6,6 +6,7 @@
         <rosparam file="$(find navigation_test)/param/local_costmap_params.yaml" command="load" />
         <rosparam file="$(find navigation_test)/param/global_costmap_params.yaml" command="load" />
         <rosparam file="$(find navigation_test)/param/base_local_planner_params.yaml" command="load" />
+        <remap from="cmd_vel" to="/car/cmd_vel"></remap>
     </node>
 
 </launch>
