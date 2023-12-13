@@ -1,0 +1,33 @@
+<launch>
+    <!-- 设置地图的配置文件 -->
+    <arg name="map" default="nav.yaml" />
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find navigation_test)/map/$(arg map)"/>
+    <!-- 启动AMCL节点 -->
+    <include file="$(find navigation_test)/launch/amcl.launch" />
+        <!-- 启动 rviz -->
+        <node pkg="rviz" type="rviz" name="rviz" args="-d $(find navigation_test)/config/rviz_03.rviz"/>
+
+        <!-- 关节以及机器人状态发布节点 -->
+        <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+        <!-- 将 Urdf 文件的内容加载到参数服务器 -->
+        <param name="robot_description" command="$(find xacro)/xacro $(find navigation_test)/Xacro/car.xacro" />
+        <!-- 启动 gazebo -->
+        <include file="$(find gazebo_ros)/launch/empty_world.launch">
+            <arg name="world_name" value="$(find navigation_test)/worlds/box_house.world" />
+            <arg name="paused" value="false" />
+            <arg name="use_sim_time" value="true" />
+            <arg name="gui" value="true" />
+            <arg name="headless" value="false" />
+            <arg name="debug" value="false" />
+        </include>
+        <!-- <node pkg="navigation_test" type="rand_move.py" name="car_rand"/ -->
+        <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" ns="car">
+        </node>
+            
+        <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 -1.57 0 -1.57 /camera /support_depth" />
+    
+        <!-- 在 gazebo 中显示机器人模型 -->
+        <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  />
+</launch>
