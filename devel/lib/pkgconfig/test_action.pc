@@ -1,0 +1,8 @@
+prefix=/home/shrenqi/workspace/devel
+
+Name: test_action
+Description: Description of test_action
+Version: 0.0.0
+Cflags: -I/home/shrenqi/workspace/devel/include
+Libs: -L${prefix}/lib 
+Requires: actionlib actionlib_msgs roscpp rospy std_msgs

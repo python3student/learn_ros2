@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="test_action" type="act01_server" name="act01_server" output="screen"/>
+    <node pkg="test_action" type="act02_client" name="act02_client" output="screen"/>
+</launch>

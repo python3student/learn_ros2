@@ -1,0 +1,2 @@
+set(test_action_MESSAGE_FILES "/home/shrenqi/workspace/devel/share/test_action/msg/AddIntsAction.msg;/home/shrenqi/workspace/devel/share/test_action/msg/AddIntsActionGoal.msg;/home/shrenqi/workspace/devel/share/test_action/msg/AddIntsActionResult.msg;/home/shrenqi/workspace/devel/share/test_action/msg/AddIntsActionFeedback.msg;/home/shrenqi/workspace/devel/share/test_action/msg/AddIntsGoal.msg;/home/shrenqi/workspace/devel/share/test_action/msg/AddIntsResult.msg;/home/shrenqi/workspace/devel/share/test_action/msg/AddIntsFeedback.msg")
+set(test_action_SERVICE_FILES "")
